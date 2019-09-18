@@ -1,0 +1,293 @@
+.backgroundAll {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: whitesmoke;
+    z-index: -1;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#sidebar {
+    transition: all 1s;
+    position: fixed;
+    background: #293a42;
+    color: white;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 260px;
+}
+
+#sidebar .sideheader {
+    padding: 15px 5px;
+    display: flex;
+    background: #202930;
+    height: 30px;
+    overflow: hidden;
+}
+
+#sidebar .sideheader .name h1 {
+    transition: all 1s;
+    font-size: 16px;
+    margin: 0px;
+}
+
+#sidebar .sideheader .name p {
+    transition: all 1s;
+    font-size: 14px;
+    margin: 0px;
+    opacity: 0.8;
+}
+
+#sidebar .sideheader .hamburgerbar {
+    transition: all 1s;
+    margin-left: auto;
+    width: 21px;
+    display: block;
+    align-self: center;
+    margin-right: 10px;
+}
+
+#sidebar .sideheader .hamburgerbar a .bar {
+    transition: all 1s;
+    background: white;
+    height: 3px;
+    margin-bottom: 3px;
+}
+
+#sidebar .sidebody .sidebodypart {
+    border-top: solid 3px #2f3a43;
+}
+
+#sidebar .sidebody .sidebodypart ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#sidebar .sidebody .sidebodypart ul li {
+    height: 37px;
+    padding-left: 10px;
+    border-left: solid 3px #293a42;
+    display: flex;
+    margin-bottom: 2px;
+}
+
+#sidebar .sidebody .sidebodypart ul li:hover {
+    background: #212f32;
+    border-left: solid 3px #17b1b8;
+}
+
+#sidebar .sidebody .sidebodypart .isActive {
+    background: #212f32;
+    border-left: solid 3px #17b1b8;
+}
+
+#sidebar .sidebody .sidebodypart ul li a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#sidebar .sidebody .sidebodypart ul li a p {
+    transition: all 1s;
+    align-self: center;
+    margin: 0px;
+}
+
+#navbar {
+    transition: all 1s;
+    position: fixed;
+    margin-left: 260px;
+    display: flex;
+    background: #f8f9fe;
+    height: 65px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0px 30px;
+}
+
+#navbar .searchbar {
+    align-self: center;
+}
+
+#navbar .searchbar input {
+    border: none;
+    background: transparent;
+    border-bottom: solid 1px #000078;
+}
+
+#navbar .barInfo {
+    align-self: center;
+    margin-left: auto;
+}
+
+#dashboardData {
+    transition: all 1s;
+    margin-left: 252px;
+    margin-top: 65px;
+    padding: 20px;
+}
+
+.animationNavbar {
+    margin-left: 100px !important;
+    transition: all 1s;
+}
+
+.animationDashboardData {
+    margin-left: 100px !important;
+    transition: all 1s;
+}
+
+.animationSideBar {
+    width: 100px !important;
+    transition: all 1s;
+}
+
+.animationSideBar .sideheader .name h1 {
+    font-size: 10px !important;
+    transition: all 1s;
+}
+
+.animationSideBar .sideheader .name p {
+    font-size: 8px !important;
+    transition: all 1s;
+}
+
+.animationSideBar .sideheader .hamburgerbar {
+    width: 12px !important;
+    transition: all 1s;
+}
+
+.animationSideBar .topbar {
+    transform: rotate(35deg);
+    transition: all 1s;
+}
+
+.animationSideBar .middlebar {
+    display: none;
+    transition: all 1s;
+}
+
+.animationSideBar .bottombar {
+    transform: rotate(-35deg);
+    transition: all 1s;
+}
+
+.animationSideBar .sidebody .sidebodypart ul li a {
+    font-size: 10px;
+    transition: all 1s;
+}
+
+#dashboardData .tabelform{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+}
+
+#dashboardData .table {
+    border: 1px solid black;
+    display:grid;
+    grid-template-columns:3em 2fr 2fr 2fr 2fr 2fr;
+}
+
+#dashboardData .table .title {
+    grid-column: 1/7;
+    background: rgb(233, 212, 20) !important;
+    color: #ffffff;
+}
+
+#dashboardData .table > div {
+    background:rgb(233, 212, 20);
+    padding:10px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+#dashboardData .table > div:nth-child(odd) {
+background:black;
+}
+
+#dashboardData .tableform .formtext input {
+    width: auto;
+}
+
+#dashboardData .tableform > div{
+    background:rgb(202, 202, 202);
+    padding:10px;
+}
+
+.dropdown .dropbutton {
+    font-size: 16px; 
+    border: 3px solid ;
+    outline: none;
+    color: #e7e7e7;
+    padding: 14px 16px;
+    background-color: #242424;
+    font-family: inherit; 
+    margin: 0; 
+  }
+  
+#navbar a:hover, .dropdown:hover .dropbutton {
+    background-color: rgb(68, 98, 180);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #242424;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    float: none;
+    color: #e7e7e7;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(156, 156, 156);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.form-table{
+    margin-top: 15px;
+    color: white;
+}
+
+.form-table1{
+    margin-top: 15px;
+    color:black;
+    background: #ffffff;
+    font-size: 12pt;
+}
+
+.form-table1 input[type="text"]{
+    width: 10cm;
+}
+
+.icon{
+    height: 25px;
+    width: 25px;
+    padding-left: 29px;
+}
