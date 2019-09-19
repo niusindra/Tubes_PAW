@@ -21,8 +21,8 @@ echo '
   <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
             <a class="navbar-item" href="#">
-                <figure class="image is-512x320">
-                    <img src="../css/barbar-Icon.png">
+                <figure class="image">
+                    <img src="../css/Barbar_Icon.png">
                 </figure>
             </a>
 
