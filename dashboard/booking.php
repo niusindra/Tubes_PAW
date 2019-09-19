@@ -1,6 +1,6 @@
 <?php include '../layout/dashboard.php';?>
 <div class="homeStyle">
-        <h1>Welcome to Home Page</h1>
+        <h1>Booking</h1>
     </div>
     </body>
     </html>

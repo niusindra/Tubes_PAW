@@ -36,19 +36,19 @@ echo '
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-light" href="./index.php">
+                        <a class="button is-light" href="../index.php">
                         Home
                         </a>
-                        <a class="button is-light" href="./login_page.php">
+                        <a class="button is-light" href="./contactus.php">
                         Contact Us
                         </a>
-                        <a class="button is-light" href="./login_page.php">
+                        <a class="button is-light" href="./booking.php">
                         Booking
                         </a>
-                        <a class="button is-light" href="./register_page.php">
+                        <a class="button is-light" href="../register_page.php">
                         Sign Up
                         </a>
-                        <a class="button is-primary" href="./login_page.php">
+                        <a class="button is-primary" href="../login_page.php">
                         Log in
                         </a>
                     </div>

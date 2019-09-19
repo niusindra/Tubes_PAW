@@ -10,5 +10,3 @@ try {
     echo "Connection error: " . $exception->getMessage();
 }
 ?>
-
-hapie
