@@ -31,10 +31,10 @@
                         <a class="button is-light" href="./index.php">
                         Home
                         </a>
-                        <a class="button is-light" href="./login_page.php">
+                        <a class="button is-light" href="./dashboard/contactus.php">
                         Contact Us
                         </a>
-                        <a class="button is-light" href="./login_page.php">
+                        <a class="button is-light" href="./dashboard/booking.php">
                         Booking
                         </a>
                         <a class="button is-light" href="./register_page.php">
