@@ -20,12 +20,13 @@ echo '
   <div class="backgroundAll"></div>
   <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-          <a class="navbar-item" href="#">
-              <img src="./css/barbar-icon.png" width="112"
-              height="28">
+            <a class="navbar-item" href="#">
+                <figure class="image is-512x320">
+                    <img src="../css/barbar-Icon.png">
+                </figure>
             </a>
 
-            <a role="button" class="navbar-burger burger" aria-laberl="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
