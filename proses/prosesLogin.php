@@ -13,7 +13,7 @@ if(isset($_POST['login'])){
             session_start();
             $_SESSION['isLogin'] = true;
             $_SESSION['user'] = $user;
-            echo '<script>alert("success"); window.location = "../layout/dashboard.php"</script>';
+            echo '<script>alert("success"); window.location = "../dashboard/indexuser.php"</script>';
         }else{
             echo '<script>alert("Email or Password Invalid"); window.location = "../login_page.php"</script>';
         }

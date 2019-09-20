@@ -3,10 +3,9 @@ $dbServer = "localhost";
 $username = "root";
 $password = "";
 $dbName = "tubespaw";
- 
-try {
-    $con = new PDO("mysql:host={$dbServer};dbname={$dbName}", $username, $password);
-}catch(PDOException $exception){ //to handle connection error
-    echo "Connection error: " . $exception->getMessage();
+$con = mysqli_connect($dbServer,$username,$password,$dbName);
+if(mysqli_connect_errno())
+{
+    echo "Failed to connect to MySQL: ". mysqli_connect_error();
 }
 ?>

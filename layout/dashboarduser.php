@@ -1,4 +1,10 @@
 <?php
+session_start();
+if(!$_SESSION['isLogin']){
+    header("location: ../login_page.php");
+}else{
+    include('../db.php');
+}
 echo '
 <!DOCTYPE html>
 <html lang="en">
@@ -30,27 +36,23 @@ echo '
         <div id="navbarBasicExample" class="navbar-menu">
             
             <div class="navbar-end">
-                <a class="navbar-item" href="../index.php">
+                <a class="navbar-item" href="./indexuser.php">
                     Home
                 </a>
 
-                <a class="navbar-item" href="./contactus.php">
+                <a class="navbar-item" href="./contactususer.php">
                     Contact Us
                 </a>
 
-                <a class="navbar-item" href="./booking.php">
+                <a class="navbar-item" href="./bookinguser.php">
                     Booking
                 </a>
 
 
                 <div class="navbar-item">
                     <div class="buttons">
-                        
-                        <a class="button is-dark" href="../register_page.php">
-                        Sign Up
-                        </a>
-                        <a class="button is-light" href="../login_page.php">
-                        Log in
+                        <a class="button is-light" href="../proses/prosesLogout.php">
+                        Log out
                         </a>
                     </div>
                 </div>
