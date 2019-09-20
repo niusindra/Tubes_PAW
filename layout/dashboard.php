@@ -18,15 +18,15 @@ echo '
 </head>
   <body>
   <div class="backgroundAll"></div>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-            <a class="navbar-item" href="#">
-                <figure class="image">
+          <a class="navbar-item" href="#">
+                <figure >
                     <img src="../css/Barbar_Icon.png">
                 </figure>
             </a>
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger burger" aria-laberl="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -34,22 +34,28 @@ echo '
         </div>
 
         <div id="navbarBasicExample" class="navbar-menu">
+            
             <div class="navbar-end">
+                <a class="navbar-item" href="../index.php">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="./contactus.php">
+                    Contact Us
+                </a>
+
+                <a class="navbar-item" href="./booking.php">
+                    Booking
+                </a>
+
+
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-light" href="../index.php">
-                        Home
-                        </a>
-                        <a class="button is-light" href="./contactus.php">
-                        Contact Us
-                        </a>
-                        <a class="button is-light" href="./booking.php">
-                        Booking
-                        </a>
-                        <a class="button is-light" href="../register_page.php">
+                        
+                        <a class="button is-dark" href="../register_page.php">
                         Sign Up
                         </a>
-                        <a class="button is-primary" href="../login_page.php">
+                        <a class="button is-dark is-primary" href="../login_page.php">
                         Log in
                         </a>
                     </div>

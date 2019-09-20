@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/bulma-0.7.5/css/bulma.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bulma-0.7.5/css/bulma.min.css">
+    
     <title>Home</title>
 </head>
   <body>
   <div class="backgroundAll"></div>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
           <a class="navbar-item" href="#">
-                <figure class="image">
+                <figure >
                     <img src="./css/Barbar_Icon.png">
                 </figure>
             </a>
@@ -26,22 +27,28 @@
         </div>
 
         <div id="navbarBasicExample" class="navbar-menu">
+            
             <div class="navbar-end">
+                <a class="navbar-item">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="./dashboard/contactus.php">
+                    Contact Us
+                </a>
+
+                <a class="navbar-item" href="./dashboard/booking.php">
+                    Booking
+                </a>
+
+
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-light" href="./index.php">
-                        Home
-                        </a>
-                        <a class="button is-light" href="./dashboard/contactus.php">
-                        Contact Us
-                        </a>
-                        <a class="button is-light" href="./dashboard/booking.php">
-                        Booking
-                        </a>
-                        <a class="button is-light" href="./register_page.php">
+                        
+                        <a class="button is-dark" href="./register_page.php">
                         Sign Up
                         </a>
-                        <a class="button is-primary" href="./login_page.php">
+                        <a class="button is-dark is-primary" href="./login_page.php">
                         Log in
                         </a>
                     </div>
@@ -49,6 +56,9 @@
             </div>
         </div>
     </nav>
+    <div>
+    
+    </div>
     <div class="homeStyle">
         <h1>Welcome to Home Page</h1>
     </div>

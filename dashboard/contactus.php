@@ -1,6 +1,6 @@
 <?php include '../layout/dashboard.php';?>
 <div class="homeStyle">
-        <h1>Contact Us</h1>
+
     </div>
     </body>
     </html>
