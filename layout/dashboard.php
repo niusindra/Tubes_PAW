@@ -18,11 +18,11 @@ echo '
 </head>
   <body>
   <div class="backgroundAll"></div>
-  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
           <a class="navbar-item" href="#">
                 <figure >
-                    <img src="./css/barbar-icon.png">
+                    <img src="../css/barbar-icon.png">
                 </figure>
             </a>
 
@@ -55,7 +55,7 @@ echo '
                         <a class="button is-dark" href="../register_page.php">
                         Sign Up
                         </a>
-                        <a class="button is-dark is-primary" href="../login_page.php">
+                        <a class="button is-light" href="../login_page.php">
                         Log in
                         </a>
                     </div>

@@ -11,7 +11,7 @@
 </head>
   <body>
   <div class="backgroundAll"></div>
-  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
           <a class="navbar-item" href="#">
                 <figure >
@@ -48,7 +48,7 @@
                         <a class="button is-dark" href="./register_page.php">
                         Sign Up
                         </a>
-                        <a class="button is-dark is-primary" href="./login_page.php">
+                        <a class="button is-light" href="./login_page.php">
                         Log in
                         </a>
                     </div>
@@ -84,8 +84,6 @@ color: white;
  margin: 0px auto;
  padding: 10px;
  border-radius: 20px;
- background-color: #6bd6a6;
-
 }
 </style>
 

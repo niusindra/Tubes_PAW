@@ -10,10 +10,12 @@
     </head>
   <body>
   <div class="backgroundAll"></div>
-  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-          <a class="navbar-item" href="./">
-              <img src="./css/barbar-icon.png">
+        <a class="navbar-item" href="#">
+                <figure >
+                    <img src="./css/barbar-icon.png">
+                </figure>
             </a>
         </div>
         <div id="navbarBasicExample" class="navbar-menu">
@@ -49,10 +51,10 @@
                         </div>
                     </div>
                     <footer class="card-footer">
-                        <input name="login" type="submit" value="Log In" style="padding: 0px !important" class="card-footer-item is-link button">
+                        <input name="login" type="submit" value="Log In" style="padding: 0px !important" class="card-footer-item is-dark button">
                     </footer>
                     </div>
-                    <small style="color:white">New to My Site? <a href="./register_page.php">Sign Up Now</a></small>
+                    <small>New to My Site? <a href="./register_page.php">Sign Up Now</a></small>
                     </div>
                 </div>
             </form>
