@@ -45,7 +45,7 @@ align-items: center;
 font-size: 50px;
 font-weight: bold;
 color: white;
-
+ 
 }
 
 .homeStyle h1{
@@ -56,3 +56,5 @@ color: white;
 
 }
 </style>
+
+
