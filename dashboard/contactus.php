@@ -1,7 +1,7 @@
 <?php include '../layout/dashboard.php';?>
-<div class="homeStyle">
 
-    </div>
+        
+
     </body>
     </html>
     <style lang="css">

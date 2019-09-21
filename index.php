@@ -41,17 +41,10 @@
                     Booking
                 </a>
 
-
                 <div class="navbar-item">
-                    <div class="buttons">
-                        
-                        <a class="button is-dark" href="./register_page.php">
-                        Sign Up
-                        </a>
-                        <a class="button is-light" href="./login_page.php">
+                    <a class="button is-light" href="./login_page.php">
                         Log in
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
