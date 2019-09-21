@@ -17,7 +17,6 @@ align-items: center;
 font-size: 50px;
 font-weight: bold;
 color: white;
-
 }
 
 .homeStyle h1{
@@ -25,6 +24,5 @@ color: white;
  padding: 10px;
  border-radius: 20px;
  background-color: #6bd6a6;
-
 }
 </style>
