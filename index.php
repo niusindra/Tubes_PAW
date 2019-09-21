@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bulma-0.7.5/css/bulma.min.css">
     
-    <title>Home</title>
+    <title>BarBarbershop</title>
 </head>
   <body>
   <div class="backgroundAll"></div>
