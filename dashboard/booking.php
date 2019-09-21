@@ -153,7 +153,7 @@
                 <div class="column">
                     <div class="tile is-parent">
                         <article class="tile is-child notification">
-                        <p class="title is-6">Side Part + High Bald Fade</p>
+                        <p class="title is-6">Side Part + High Bald</p>
                         <figure class="image">
                             <img src="../css/Hair-Style/Side_Part_Hairstyle_High_Bald_Fade.png">
                         </figure>
