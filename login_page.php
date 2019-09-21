@@ -20,10 +20,12 @@
         </div>
         <div id="navbarBasicExample" class="navbar-menu">
             
-            <div class="navbar-start">
-                <a class="navbar-item" href="./index.php">
-                    Home
-                </a>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="button is-light" href="./index.php">
+                        Home
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
