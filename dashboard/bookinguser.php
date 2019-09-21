@@ -1,207 +1,45 @@
-<?php include '../layout/dashboarduser.php';?>
+<?php include '../layout/dashboarduser.php';
+$id=$_GET['id']; 
+
+$query = mysqli_query($con, "SELECT * FROM users where id='$id'") or die(mysqli_error($con)); 
+$data = mysqli_fetch_assoc($query)?>
 
         <div class="container" id="gallery">
             <h1 class="title is-1 has-text-centered">Choose Your Style</h1>
             <div class="columns">
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                            <p class="title is-6">Slicked Back Undercut</p>
-                            
-                            <a class="modal-button "data-target="#myModal" aria-haspopup="true">
-                                <figure class="image">
-                                    <img src="../css/Hair-Style/Slicked_Back_Undercut.png" >
-                                </figure>
-                            </a>
-                        </article>
-                    </div> 
-                </div>
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Long Comb + Low Fade</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Long_Comb_Over_Low_Fade.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Long Special Hairstyle</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Long_Hairstyle.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Medium Side Swept</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Medium_Side_Swept.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Messy Taper Hairstyle</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Messy_Taper_Hairstyle.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Short Haircut + Undercut</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Short_Haircut_Combed_Over_Undercut.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Short Special Quiff</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Short_Quiff.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Short Sides Long Top</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">  
-                            <img src="../css/Hair-Style/Short_Sides_Long_Top.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Short Special Textured</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Short_Textured.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Slicked Back Wavy</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Slicked_Back_Wavy.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Textured Pompadour</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Textured_Pompadour_Fade.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Textured Crop Top Fade</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Textured_Crop_Top_Fade.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Faux Hawk Fade</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Faux_Hawk_Fade.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Spiky Hair Special Fade</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Spiky_Hair_Fade.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Side Part + High Bald Fade</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Side_Part_Hairstyle_High_Bald_Fade.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
-                <div class="column">
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification">
-                        <p class="title is-6">Slick Back With Flow</p>
-                        <a class="modal-button"data-target="#myModal" aria-haspopup="true">
-                        <figure class="image">
-                            <img src="../css/Hair-Style/Slick_Back_With_Flow.png">
-                        </figure>
-                        </a>
-                        </article>
-                    </div> 
-                </div>
+
+            <?php
+
+                $hair_style= array('Slicked Back Undercut', 'Long Comb + Low Fade', 'Long Special Hairystyle', 'Medium Side Swept', 'Messy Taper Hairstyle', 'Short Haircut + Undercut', 'Short Special Quiff', 'Short Sides Long Top', 'Short Special Textured', 'Slicked Back Wavy', 'Textured Pompadour', 'Textured Crop Top Fade', 'Faux Hawk Fade', 'Spiky Hair Special Fade', 'Side Part + High Bald Fade', 'Slick Back With Flow');
+                $hair_style_image= array('Slicked_Back_Undercut', 'Long_Comb_Over_Low_Fade', 'Long_Hairstyle', 'Medium_Side_Swept', 'Messy_Taper_Hairstyle', 'Short_Haircut_Combed_Over_Undercut', 'Short_Quiff', 'Short_Sides_Long_Top', 'Short_Textured', 'Slicked_Back_Wavy', 'Textured_Pompadour_Fade', 'Textured_Crop_Top_Fade', 'Faux_Hawk_Fade', 'Spiky_Hair_Fade', 'Side_Part_Hairstyle_High_Bald_Fade', 'Slick_Back_With_Flow');
+                $counter=0;
+                while($counter<sizeof($hair_style)){
+                    echo '
+                        <div class="column">
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification">
+                                    <p class="title is-6">'.$hair_style[$counter].'</p>
+                                    
+                                    <a class="modal-button "data-target="#myModal" aria-haspopup="true">
+                                        <figure class="image">
+                                            <img src="../css/Hair-Style/'.$hair_style_image[$counter].'.png" >
+                                        </figure>
+                                    </a>
+                                </article>
+                            </div> 
+                        </div>
+                    ';
+                    if(($counter+1)%4==0){
+                        echo'</div>
+                        <div class="columns">';
+                    }
+                        
+                    $counter++;
+                }
+
+            ?>
+
+                
             </div>
 
         </div>
@@ -210,7 +48,14 @@
             <div class="modal-background"></div>
                 <div class="modal-content">
                     <div class="box">
-                        
+
+                    <div class="field">
+                    <label class="label">Nama pemesan</label>
+                    <div class="control">
+                        <input class="input" type="text" value=<?php echo $data['username'] ?>>
+                    </div>
+                    </div>
+
                     <div class="field">
                     <label class="label">Style</label>
                     <div class="control is-expanded" >
