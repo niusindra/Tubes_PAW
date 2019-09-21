@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/bulma-0.7.5/css/bulma.min.css">
     
-    <title>Home</title>
+    <title>BarBarbershop</title>
 </head>
   <body>
   <div class="backgroundAll"></div>
@@ -19,7 +19,7 @@
                 </figure>
             </a>
 
-            <a role="button" class="navbar-burger burger" aria-laberl="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>

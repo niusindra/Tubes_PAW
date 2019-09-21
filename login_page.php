@@ -30,7 +30,7 @@
         </div>
     </nav>
         <div class="columns" style="margin-top: 80px;">
-            <div class="colimn is-one-quarter" style="margin:auto;">
+            <div class="column is-one-quarter" style="margin:auto;">
             <div class="card">
                 <header class="card-header">
                     <p class="card-header-title">

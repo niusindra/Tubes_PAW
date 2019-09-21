@@ -4,6 +4,7 @@ if(!$_SESSION['isLogin']){
     header("location: ../login_page.php");
 }else{
     include('../db.php');
+    $id=$_GET['id'];
 }
 echo '
 <!DOCTYPE html>
@@ -14,10 +15,11 @@ echo '
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/bulma-0.7.5/css/bulma.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="~bulma-calendar/dist/css/bulma-calendar.min.css" rel="stylesheet">
+    <link href="../bulma-calendar/dist/css/bulma-calendar.min.css" rel="stylesheet">
     <title>BarBarbershop</title>
 </head>
-<script src="~bulma-calendar/dist/js/bulma-calendar.min.js"></script>
+<script src="../bulma-calendar/dist/js/bulma-calendar.min.js"></script>
+// <script src="../script/script.js"></script>
   <body>
   <div class="backgroundAll"></div>
   <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
@@ -41,15 +43,15 @@ echo '
 
 
 
-                <a class="navbar-item" href="./indexuser.php">
+                <a class="navbar-item" href="../dashboard/indexuser.php?id='.$id.'">
                     Home
                 </a>
 
-                <a class="navbar-item" href="./contactususer.php">
+                <a class="navbar-item" href="../dashboard/contactususer.php?id='.$id.'">
                     Contact Us
                 </a>
 
-                <a class="navbar-item" href="./bookinguser.php">
+                <a class="navbar-item" href="../dashboard/bookinguser.php?id='.$id.'">
                     Booking
                 </a>
 
@@ -60,7 +62,7 @@ echo '
                         </figure>
                     </a>
                     <div class="navbar-dropdown is-right">
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="../dashboard/profile.php?id='.$id.'">
                             Profile
                         </a>
                         <a class="navbar-item">

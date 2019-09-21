@@ -8,7 +8,7 @@
                         <article class="tile is-child notification">
                             <p class="title is-6">Slicked Back Undercut</p>
                             
-                            <a class="modal-button"data-target="#myModal" aria-haspopup="true">
+                            <a class="modal-button "data-target="#myModal" aria-haspopup="true">
                                 <figure class="image">
                                     <img src="../css/Hair-Style/Slicked_Back_Undercut.png" >
                                 </figure>

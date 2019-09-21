@@ -1,4 +1,6 @@
-<?php include '../layout/dashboarduser.php';?>
+<?php include '../layout/dashboarduser.php';
+$id=$_GET['id'];?>
+
 <div class="homeStyle">
 
     </div>
