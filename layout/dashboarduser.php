@@ -1,12 +1,19 @@
+<?php
+session_start();
+if(!$_SESSION['isLogin']){
+    header("location: ../login_page.php");
+}else{
+    include('../db.php');
+}
+echo '
 <!DOCTYPE html>
 <html lang="en">
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/bulma-0.7.5/css/bulma.min.css">
-    
+    <link rel="stylesheet" href="../css/bulma-0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Home</title>
 </head>
   <body>
@@ -15,7 +22,7 @@
       <div class="navbar-brand">
           <a class="navbar-item" href="#">
                 <figure >
-                    <img src="./css/barbar-Icon.png">
+                    <img src="../css/barbar-Icon.png">
                 </figure>
             </a>
 
@@ -29,61 +36,27 @@
         <div id="navbarBasicExample" class="navbar-menu">
             
             <div class="navbar-end">
-                <a class="navbar-item">
+                <a class="navbar-item" href="./indexuser.php">
                     Home
                 </a>
 
-                <a class="navbar-item" href="./dashboard/contactus.php">
+                <a class="navbar-item" href="./contactususer.php">
                     Contact Us
                 </a>
 
-                <a class="navbar-item" href="./dashboard/booking.php">
+                <a class="navbar-item" href="./bookinguser.php">
                     Booking
                 </a>
 
 
                 <div class="navbar-item">
                     <div class="buttons">
-                        
-                        <a class="button is-dark" href="./register_page.php">
-                        Sign Up
-                        </a>
-                        <a class="button is-light" href="./login_page.php">
-                        Log in
+                        <a class="button is-light" href="../proses/prosesLogout.php">
+                        Log out
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
-    <div>
-    
-    </div>
-    <div class="homeStyle">
-        <h1>Welcome to Home Page</h1>
-    </div>
-    </body>
-    </html>
-    <style lang="css">
-
-.homeStyle{
-position: fixed;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-display: flex;
-align-items: center;
-font-size: 50px;
-font-weight: bold;
-color: white;
-
-}
-
-.homeStyle h1{
- margin: 0px auto;
- padding: 10px;
- border-radius: 20px;
-}
-</style>
-
+    </nav>'
+?>    

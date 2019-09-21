@@ -11,11 +11,12 @@
     </head>
   <body>
   <div class="backgroundAll"></div>
-  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-          <a class="navbar-item" href="./">
-              <img src="https://bulma.io/images/bulma-logo.png" width="112"
-              height="28">
+        <a class="navbar-item" href="#">
+                <figure >
+                    <img src="./css/barbar-icon.png">
+                </figure>
             </a>
         </div>
         <div id="navbarBasicExample" class="navbar-menu">
@@ -57,7 +58,7 @@
                             </div>      
                         </div>
                         <footer class="card-footer">
-                            <input name="store" type="submit" value="Sign Up" style="padding: 0px !important" class="card-footer-item button is-warning">
+                            <input name="store" type="submit" value="Sign Up" style="padding: 0px !important" class="card-footer-item button is-dark">
                         </footer>
                     </div>
                     <small>Already have account? <a href="./login_page.php">Login</a></small>
