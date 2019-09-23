@@ -11,7 +11,7 @@ $id=$_GET['id'];
                         Your Profile
                     </p>
                 </header>
-                <form action="./editprofile.php?id=<?php $id?>" method="POST">
+                <form action="./editprofile.php?id=<?php echo $id?>" method="POST">
                 <div class="card-content">
                     <div class="field">
                         <p class="control">

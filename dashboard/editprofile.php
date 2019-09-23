@@ -11,7 +11,7 @@ $id=$_GET['id'];
                         Your Profile
                     </p>
                 </header>
-                <form action="./proses/prosesRegister.php" method="POST">
+                <form action="../proses/prosesEdit.php?id= <?php echo $id ?>" method="POST">
                 <div class="card-content">
                     <div class="field">
                         <p class="control">
@@ -27,7 +27,7 @@ $id=$_GET['id'];
                         </div>     
                         </div>
                         <footer class="card-footer">
-                            <input name="store" type="submit" value="Edit Profile" style="padding: 0px !important" class="card-footer-item button is-dark">
+                            <input name="edit" type="submit" value="Edit Profile" style="padding: 0px !important" class="card-footer-item button is-dark">
                         </footer>
                 </div>
                 </form>
