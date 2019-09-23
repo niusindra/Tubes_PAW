@@ -11,18 +11,18 @@ $id=$_GET['id'];
                         Your Profile
                     </p>
                 </header>
-                <form action="./editprofile.php?id=<?php $id?>" method="POST">
+                <form action="./proses/prosesRegister.php" method="POST">
                 <div class="card-content">
                     <div class="field">
                         <p class="control">
                             <label class="label">Name</label>
-                            <input class="input" name="name"  type="text" placeholder="name" disabled value="<?php echo $data['username'] ?>">
+                            <input class="input" name="name"  type="text" placeholder="name" value="<?php echo $data['username'] ?>">
                         </p>
                         </div>
                         <div class="field">
                          <p class="control">
                              <label class="label">Password</label>
-                             <input name="password" class="input" type="password" placeholder="Password" disabled>
+                             <input name="password" class="input" type="password" placeholder="Password">
                         </p>
                         </div>     
                         </div>

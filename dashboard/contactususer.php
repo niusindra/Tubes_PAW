@@ -1,14 +1,17 @@
-<?php include '../layout/dashboarduser.php';?>
+<?php include '../layout/dashboarduser.php';
+$id=$_GET['id']; 
+$query = mysqli_query($con, "SELECT * FROM users where id='$id'") or die(mysqli_error($con)); 
+        $data = mysqli_fetch_assoc($query)?>
         
 <div class="container">  
   <form id="contact" action="../proses/emailcontact.php" method="post" >
     <h3> Contact Us</h3>
     <h4>Feel Free Contact us , and get reply with in 24 hours!</h4>
     <fieldset>
-      <input placeholder="Your name" type="text" name="name" tabindex="1" required autofocus>
+      <input placeholder="Your name" type="text" name="name" tabindex="1" value="<?php echo $data['username'] ?>" required autofocus>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Email Address" type="email" name="email" tabindex="2" required>
+      <input placeholder="Your Email Address" type="email" name="email" tabindex="2" value=<?php echo $data['email'] ?> required>
     </fieldset>
     <fieldset>
       <input placeholder="Your Phone Number" type="tel"  name="phone" tabindex="3" required>
@@ -20,7 +23,7 @@
       <textarea placeholder="Type your Message Here...." name="message" tabindex="5" required></textarea>
     </fieldset>
     <fieldset>
-      <button name="submit" type="submit" id="contact-submit">Submit</button>
+	<button name="submit" type="submit" id="contact-submit"  data-submit="...Sending">Submit</button>
     </fieldset>
   </form>
   </div>
