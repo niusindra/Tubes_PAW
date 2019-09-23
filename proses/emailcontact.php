@@ -2,10 +2,9 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
-    require '../PHPMailer-master/src/Exception.php';
-    require '../PHPMailer-master/src/PHPMailer.php';
-    require '../PHPMailer-master/src/SMTP.php';
-    require_once('../vendor/autoload.php');
+    require 'PHPMailer-6.0.3/src/Exception.php';
+    require 'PHPMailer-6.0.3/src/PHPMailer.php';
+    require 'PHPMailer-6.0.3/src/SMTP.php';
 
     $mail= new PHPMailer();
     $mail->isSMTP();
@@ -21,7 +20,9 @@
     $mail->Body= 'A test email';
     $mail->AddAddress('niusindra@gmail.com');
 
-    $mail->Send();
+    if($mail->Send()) {
+        echo 'success';
+    }
 
 
 ?>
