@@ -1,6 +1,7 @@
 <?php include '../layout/dashboard.php';?>
 
         <div class="container" id="gallery">
+            <br>
             <h1 class="title is-1 has-text-centered">Choose Your Style</h1>
             <div class="columns">
 

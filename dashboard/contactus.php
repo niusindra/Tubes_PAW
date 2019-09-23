@@ -1,7 +1,7 @@
 <?php include '../layout/dashboard.php';?>
 
 <div class="container">  
-  <form id="contact" action="" method="post">
+  <form id="contact" action="../proses/emailcontact.php" method="post">
     <h3> Contact Us</h3>
     <h4>Feel Free Contact us , and get reply with in 24 hours!</h4>
     <fieldset>

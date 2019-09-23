@@ -15,7 +15,7 @@
       <div class="navbar-brand">
           <a class="navbar-item" href="#">
                 <figure >
-                    <img src="./css/barbar-icon.png">
+                    <img src="./css/barbar-Icon.png">
                 </figure>
             </a>
 
