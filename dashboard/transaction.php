@@ -1,7 +1,7 @@
 <?php include '../layout/dashboarduser.php';
 $id=$_GET['id']; ?>
     <div>
-    <table class="userListTable">
+    <table class="table" style="margin-top:5em">
         <tr>
             <th>No.</th>
             <th>Style</th>
@@ -11,7 +11,7 @@ $id=$_GET['id']; ?>
         </tr>
 
         <?php
-        $query = mysqli_query($con, "SELECT style,layanan,layanan_tambah,tanggal FROM transaction where id_user=$id") or die(mysqli_error($con));
+        $query = mysqli_query($con, "SELECT id,style,layanan,layanan_tambah,tanggal FROM transaction where id_user=$id") or die(mysqli_error($con));
 
         if (mysqli_num_rows($query) == 0) {
             echo '<tr> <td colspan="7"> Tidak ada data ! </td></tr>';
@@ -25,10 +25,9 @@ $id=$_GET['id']; ?>
                 <td>' . $data['layanan_tambah'] . '</td>                         
                 <td>' . $data['tanggal'] . '</td>                         
                                        
-                <td>
-                    <a href="../dashboard/formedit.php?id=' . $data['id'] . '">Edit </a>/                             
-                    <a href="../proses/deletePeserta.php?id=' . $data['id'] . '" onclick="return confirm(\'Yakin?\')">Hapus </a>
-                </td>                       
+                <td>                           
+                    <a href="../proses/deletetransaction.php?id=' . $data['id'] . '" onclick="return confirm(\'Yakin?\')">Hapus </a>
+                </td>                         
                 
                 </tr>                 
                 ';
