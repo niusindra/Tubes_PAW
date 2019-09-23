@@ -16,7 +16,7 @@ $id=$_GET['id'];
                     <div class="field">
                         <p class="control">
                             <label class="label">Name</label>
-                            <input class="input" name="name"  type="text" placeholder="Name" value=<?php echo $data['username'] ?>>
+                            <input class="input" name="name"  type="text" placeholder="Name" value="<?php echo $data['username'] ?>">
                         </p>
                         </div>
                         <div class="field">
