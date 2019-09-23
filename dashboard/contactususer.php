@@ -1,7 +1,7 @@
 <?php include '../layout/dashboarduser.php';?>
         
 <div class="container">  
-  <form id="contact" action="" method="post">
+  <form id="contact" action="../proses/emailcontact.php" method="post" >
     <h3> Contact Us</h3>
     <h4>Feel Free Contact us , and get reply with in 24 hours!</h4>
     <fieldset>
@@ -20,7 +20,7 @@
       <textarea placeholder="Type your Message Here...." name="message" tabindex="5" required></textarea>
     </fieldset>
     <fieldset>
-      <button name="submit" type="submit" id="contact-submit"  data-submit="...Sending">Submit</button>
+      <button name="submit" type="submit" id="contact-submit">Submit</button>
     </fieldset>
   </form>
   </div>
