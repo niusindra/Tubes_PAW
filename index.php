@@ -77,6 +77,7 @@ color: white;
  margin: 0px auto;
  padding: 10px;
  border-radius: 20px;
+ background:rgba(0, 0, 0, 0.6);
 }
 </style>
 

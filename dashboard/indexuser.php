@@ -1,8 +1,10 @@
 <?php include '../layout/dashboarduser.php';
-$id=$_GET['id'];?>
+$id=$_GET['id'];
+        $query = mysqli_query($con, "SELECT * FROM users where id='$id'") or die(mysqli_error($con)); 
+        $data = mysqli_fetch_assoc($query)?>
 
-<div class="homeStyle">
-
+    <div class="homeStyle">
+        <h1>Welcome, <?php echo $data['username'] ?></h1>
     </div>
     </body>
     </html>
@@ -26,7 +28,6 @@ color: white;
  margin: 0px auto;
  padding: 10px;
  border-radius: 20px;
- background-color: #6bd6a6;
-
+ background:rgba(0, 0, 0, 0.6);
 }
 </style>
