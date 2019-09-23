@@ -65,7 +65,7 @@ echo '
                         <a class="navbar-item" href="../dashboard/profile.php?id='.$id.'">
                             Profile
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="../dashboard/transaction.php?id='.$id.'">
                             Transaction History
                         </a>
                         <hr class="navbar-divider">

@@ -77,26 +77,26 @@ $style="No Style Selected"
             <div class="modal-background"></div>
                 <div class="modal-content">
                     <div class="box">
-
+                    <form action="../proses/createTransaction.php?id=<?php echo $id ?>" method="POST">
                     <div class="field">
                     <label class="label">Nama pemesan</label>
                     <div class="control">
-                        <input class="input" type="text" value="<?php echo $data['username'] ?>">
+                        <input class="input" name="username" type="text" value="<?php echo $data['username'] ?>">
                     </div>
                     </div>
 
                     <div class="field">
                     <label class="label">Style</label>
                     <div class="control is-expanded" >
-                        <input class="input" type="text" value="<?php echo $style?>">
+                        <input class="input" name="style" type="text" value="<?php echo $style?>">
                     </div>
                     </div>
 
                     <div class="field">
                     <label class="label">Layanan</label>
                     <div class="control is-expanded">
-                        <div class="select">
-                        <select>
+                        <div class="select" >
+                        <select name="layanan">
                             <option>Cukur Rambut</option>
                             <option>Shaving</option>
                             <option>Cukur Rambut + Shaving</option>
@@ -108,8 +108,8 @@ $style="No Style Selected"
                     <div class="field">
                     <label class="label">Layanan Tambahan</label>
                     <div class="control is-expanded">
-                        <div class="select">
-                        <select>
+                        <div class="select" >
+                        <select name="layanantambahan">
                             <option>Keramas / Creambath</option>
                             <option>Pijat</option>
                             <option>Keramas + Pijat</option>
@@ -121,16 +121,16 @@ $style="No Style Selected"
                     <div class="field is-grouped is-grouped-left">
                     
                         <div class="control">
-                            <div class="select">
-                            <select>
+                            <div class="select" >
+                            <select name="tanggal">
                             <?php for($d = 1; $d<=31; $d++) {?>
                         <option value="<?php echo $d ?>"><?php echo $d ?></option><?php }?>
                             </select>
                             </div>
                         </div>
                         <div class="control">
-                            <div class="select">
-                            <select>
+                            <div class="select" >
+                            <select name="bulan">
                             <?php for($m = 0; $m<=11; $m++) {?>
                         <?php
                             $nama_bulan = array('Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','October','November','Desember')?>
@@ -139,8 +139,8 @@ $style="No Style Selected"
                             </div>
                         </div>   
                         <div class="control">
-                            <div class="select">
-                            <select>
+                            <div class="select" >
+                            <select name="tahun">
                             <?php for($y = 2019; $y>=1900; $y-- ) {?>
                         <option value="<?php echo $y ?>"><?php echo $y ?></option><?php } ?>
                             </select>
@@ -149,9 +149,9 @@ $style="No Style Selected"
                     </div>
                     
                     <div class="control">
-                        <button class="button is-dark">Submit</button>
+                        <button name="booking" class="button is-dark">Submit</button>
                     </div>
-
+                    </form>
                     </div>
                 </div>
             <button class="modal-close is-large" aria-label="close"></button>
